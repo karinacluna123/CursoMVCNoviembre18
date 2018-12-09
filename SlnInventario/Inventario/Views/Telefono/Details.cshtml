@@ -1,0 +1,51 @@
+﻿@model Inventario.Models.Telefono
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Telefono</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TelefonoCasa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelefonoCasa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelefonoCelular)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelefonoCelular)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefono1.IdTelefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefono1.IdTelefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefono2.IdTelefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefono2.IdTelefono)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdTelefono }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
